@@ -4,6 +4,7 @@
         <title>Unified Apparel</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
         <link rel="stylesheet" href="css/uikit.min.css" />
         <link rel="stylesheet" href="css/styles.css">
         <script src="js/uikit.min.js"></script>
@@ -23,11 +24,38 @@
         </nav>
 
         <!-- Content -->
-        <div class="wrapper">
+        <div class="wrapper uk-flex uk-flex-wrap">
             <!-- Header Image -->
-            <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200" style="background-image: url('images/HeaderImage.jpg');"></div> 
+            <img data-src="images/HeaderImage.jpg" width="1800" height="1200" alt="" uk-img>
+
+            <div class="uk-child-width-1-2@m uk-margin-small-top" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="images/light.jpg" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Top</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Bottom</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                        <div class="uk-card-media-bottom">
+                            <img src="images/light.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer -->
+            <div class="uk-width-1-1 uk-overlay uk-overlay-default uk-text-center uk-margin-small-top"><a href="https://instagram.com/unified.apparel"><span class="uk-margin-small-right uk-icon" uk-icon="instagram"></span></a><a href="mailto:204unifiedapparel@gmail.com"><span class="uk-margin-small-right uk-icon" uk-icon="mail"></span></a></div>
         </div>
         
-        <div class="uk-position-bottom uk-overlay uk-overlay-default uk-text-center"><span class="uk-margin-small-right uk-icon" uk-icon="instagram"></span></div>
     </body>
 </html>
